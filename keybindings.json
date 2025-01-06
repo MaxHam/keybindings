@@ -136,5 +136,195 @@
         "key": "cmd+h",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-    }
+    },
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.switchWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "!terminal.visible"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.navigateRight",
+        "when": "!terminal.visible"
+    },
+    // cycle through open editors
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.showAllEditors",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "shift+cmd+,",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
+    },
+    // use e to toggle sidebar
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.find",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFilesWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolder",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findInFolderWithSelectedText",
+        "when": "editorFocus"
+    },
+    // cycle through tabs in editor group. needs validation if leader key + jk should cycle 
+    // through editor groups or tabs
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    // Coding
+    // Move selected lines up and down
+    {
+        "key": "cmd+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "vim.mode == 'VisualLine' && editorTextFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "vim.mode == 'VisualLine' && editorTextFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "editor.action.showHover",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "g r",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    // Navigate search results
+    {
+        "key": "cmd+j",
+        "command": "search.action.focusNextSearchResult",
+        "when": "searchViewletVisible"
+    },
+    {
+        "key": "cmd+k",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "searchViewletVisible"
+    },
+    // Navigate windows
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
 ]
