@@ -359,7 +359,7 @@
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !explorerResourceIsReadonly && !inputFocus"
     },
     {
-        "key": "A",
+        "key": "shift+a",
         "command": "explorer.newFolder",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !explorerResourceIsReadonly && !inputFocus"
     },
