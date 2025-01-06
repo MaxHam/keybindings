@@ -290,12 +290,12 @@
     {
         "key": "g r",
         "command": "editor.action.goToReferences",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+        "when": "vim.mode == 'Normal' && editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
     },
     {
         "key": "g d",
         "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
+        "when": "vim.mode == 'Normal' && editorHasDefinitionProvider && editorTextFocus"
     },
     // Navigate search results
     {
