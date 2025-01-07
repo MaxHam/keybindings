@@ -138,7 +138,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     {
-        "key": "cmd+d",
+        "key": "cmd+b",
         "command": "workbench.action.switchWindow"
     },
     {
@@ -168,12 +168,6 @@
     {
         "key": "cmd+,",
         "command": "-workbench.action.openSettings"
-    },
-    // use e to toggle sidebar
-    {
-        "key": "cmd+e",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
         "key": "cmd+e",
@@ -372,5 +366,13 @@
         "key": "cmd+k cmd+i",
         "command": "-editor.action.showHover",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
     }
 ]
