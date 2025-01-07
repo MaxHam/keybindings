@@ -294,13 +294,13 @@
     // Navigate search results
     {
         "key": "cmd+j",
-        "command": "search.action.focusNextSearchResult",
-        "when": "searchViewletVisible"
+        "command": "search.focus.nextInputBox",
+        "when": "searchInputBoxFocus"
     },
     {
         "key": "cmd+k",
-        "command": "search.action.focusPreviousSearchResult",
-        "when": "searchViewletVisible"
+        "command": "search.focus.previousInputBox",
+        "when": "searchViewletVisible && searchViewletFocus"
     },
     // Navigate windows
     {
