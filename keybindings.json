@@ -374,5 +374,9 @@
     {
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
-    }
+    },
+    {
+        "key": "cmd+;",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
 ]
