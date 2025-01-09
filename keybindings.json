@@ -328,7 +328,7 @@
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !explorerResourceIsReadonly && !inputFocus"
     },
     {
-        "key": "c",
+        "key": "y",
         "command": "filesExplorer.copy",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !explorerResourceIsReadonly && !inputFocus"
     },
