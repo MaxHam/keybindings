@@ -113,7 +113,7 @@
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "cmd+n",
+        "key": "cmd+shift+n",
         "command": "workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
@@ -375,5 +375,15 @@
         "key": "cmd+m",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "workbench.action.moveEditorToNextGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "editorFocus"
     }
 ]
