@@ -385,5 +385,21 @@
         "key": "shift+cmd+h",
         "command": "workbench.action.moveEditorToPreviousGroup",
         "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "workbench.action.terminal.split",
+        "args": { "splitMode": "right" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
     }
 ]
