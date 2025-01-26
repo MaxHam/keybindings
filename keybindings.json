@@ -248,22 +248,6 @@
         "command": "-actions.findInFolderWithSelectedText",
         "when": "editorFocus"
     },
-    // cycle through tabs in editor group. needs validation if leader key + jk should cycle 
-    // through editor groups or tabs
-    {
-        "key": "tab",
-        "command": "workbench.action.nextEditorInGroup",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
-    },
-    {
-        "key": "shift+tab",
-        "command": "workbench.action.previousEditorInGroup",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
-    },
-    {
-        "key": "ctrl+cmd+right",
-        "command": "-workbench.action.moveEditorToNextGroup"
-    },
     // Coding
     // Move selected lines up and down
     {
@@ -393,5 +377,13 @@
         "key": "g g",
         "command": "cursorTop",
         "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.nextEditor"
     }
 ]
