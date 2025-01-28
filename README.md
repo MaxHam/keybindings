@@ -6,6 +6,24 @@ When using Vim Keybindings in VSCode, there are still times one might need to re
 
 These keybindings use native vim navigation `(j, k) + cmd` for navigating these sections.
 
+### Features
+
+- Navigate all drop down menus with `cmd+j`/`cmd+k`
+- Navigate left/right with `cmd+h`/`cmd+l`
+- Navigate inner buffers (editors tabs, terminals) with `cmd+n`/`cmd+m`
+
+- Copy/paste/delete files in the file explorer with `cmd+y`/`cmd+p`/`cmd+d`
+- Extract current editor/terminal into a new group with `cmd+shift+h`/`cmd+shift+l`
+- Close current editor/terminal with `cmd+w`
+- Show/hide the sidebars with `cmd+e` and `cmd+;`
+- Navigate search results with `j`/`k`
+
+### TODO
+
+- Navigate up/down with `cmd+j`/`cmd+k` (currently, terminal is toggled with `cmd+j` and `cmd+k` is used for inline terminal chat in Cursor)
+- For Cursor, navigating to the left out of the chat window is broken, see [this issue](https://github.com/getcursor/cursor/issues/1358).
+- While `cmd+j` moves downwards from the search box to the results, it does not work if search details are toggled.
+
 ## Usage
 
 These keybindings work for both VSCode and Cursor.
