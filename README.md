@@ -8,14 +8,34 @@ These keybindings use native vim navigation `(j, k) + cmd` for navigating these 
 
 ## Usage
 
-Update the file with:
+These keybindings work for both VSCode and Cursor.
 
-```shell
+### VSCode
+
+```sh
+cp keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+```
+
+### Cursor
+
+For these keybindings to work, make sure to set `workbench.activityBar.orientation` to `vertical` in your settings.json file.
+
+Then, copy the keybindings:
+
+```sh
+cp keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+```
+
+## Contributing
+
+If you made changes to the keybindings and you are using VSCode, you can update this repository with:
+
+```sh
 cp ~/Library/Application\ Support/Code/User/keybindings.json keybindings.json
 ```
 
-Use the keybindings in this repository with:
+for Cursor, you can update the file with:
 
-```shell
-cp keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+```sh
+cp ~/Library/Application\ Support/Cursor/User/keybindings.json keybindings.json
 ```
