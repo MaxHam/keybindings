@@ -12,7 +12,7 @@ These keybindings use native vim navigation `(j, k) + cmd` for navigating these 
 - Navigate left/right with `cmd+h`/`cmd+l`
 - Navigate inner buffers (editors tabs, terminals) with `cmd+n`/`cmd+m`
 
-- Copy/paste/delete files in the file explorer with `cmd+y`/`cmd+p`/`cmd+d`
+- Copy/paste/delete files in the file explorer with `y`/`p`/`d`
 - Extract current editor/terminal into a new group with `cmd+shift+h`/`cmd+shift+l`
 - Close current editor/terminal with `cmd+w`
 - Show/hide the sidebars with `cmd+e` and `cmd+;`
