@@ -359,20 +359,20 @@
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
-        "key": "cmd+m",
+        "key": "cmd+n",
         "command": "workbench.action.previousEditor"
     },
     {
-        "key": "cmd+n",
+        "key": "cmd+m",
         "command": "workbench.action.nextEditor"
     },
     {
-        "key": "cmd+n",
+        "key": "cmd+m",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     {
-        "key": "cmd+m",
+        "key": "cmd+n",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
