@@ -233,11 +233,6 @@
         "command": "-actions.findInFolderWithSelectedText",
         "when": "editorFocus"
     },
-    {
-        "key": "cmd+e",
-        "command": "-actions.findInFolderWithSelectedText",
-        "when": "editorFocus"
-    },
     // Coding
     // Move selected lines up and down
     {
@@ -401,5 +396,13 @@
         "key": "cmd+h",
         "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "workbench.action.decreaseViewSize"
     }
 ]
